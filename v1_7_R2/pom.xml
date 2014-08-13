@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>insight-cb-parent</artifactId>
+		<groupId>com.amshulman</groupId>
+		<version>dev-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.amshulman</groupId>
+	<artifactId>insight-cb-v1_7_R2</artifactId>
+	<name>Insight CraftBukkit v1_7_R2 Dependency</name>
+
+	<dependencies>
+		<!-- Insight libraries -->
+		<dependency>
+			<groupId>com.amshulman</groupId>
+			<artifactId>insight-cb</artifactId>
+		</dependency>
+
+		<!-- CraftBukkit -->
+		<dependency>
+			<groupId>org.bukkit</groupId>
+			<artifactId>craftbukkit</artifactId>
+			<version>1.7.5-R0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
