@@ -13,5 +13,5 @@ public abstract class Merchant {
         return INSTANCE;
     }
 
-    public abstract Location getLocation(@Nonnull Inventory inv);
+    public abstract Location getLocation(@Nonnull Inventory inventory);
 }

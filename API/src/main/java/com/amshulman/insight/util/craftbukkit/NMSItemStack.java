@@ -12,5 +12,5 @@ public abstract class NMSItemStack {
         return INSTANCE;
     }
 
-    public abstract String getTag(@Nonnull ItemStack stack);
+    public abstract String getTag(@Nonnull ItemStack itemStack);
 }

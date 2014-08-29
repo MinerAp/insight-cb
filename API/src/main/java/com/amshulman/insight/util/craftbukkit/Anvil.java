@@ -13,5 +13,5 @@ public abstract class Anvil {
         return INSTANCE;
     }
 
-    public abstract Location getLocation(@Nonnull Inventory inv);
+    public abstract Location getLocation(@Nonnull Inventory inventory);
 }

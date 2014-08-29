@@ -35,9 +35,9 @@ public final class Anvil extends com.amshulman.insight.util.craftbukkit.Anvil {
     }
 
     @Override
-    public Location getLocation(@Nonnull Inventory inv) {
+    public Location getLocation(@Nonnull Inventory inventory) {
         try {
-            ContainerAnvil anvil = (ContainerAnvil) containerAnvilField.get(((CraftInventoryAnvil) inv).getInventory());
+            ContainerAnvil anvil = (ContainerAnvil) containerAnvilField.get(((CraftInventoryAnvil) inventory).getInventory());
             World w = (World) anvilWorldField.get(anvil);
             int x = (Integer) anvilXField.get(anvil);
             int y = (Integer) anvilYField.get(anvil);

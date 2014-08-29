@@ -21,9 +21,9 @@ public final class Merchant extends com.amshulman.insight.util.craftbukkit.Merch
     }
 
     @Override
-    public Location getLocation(@Nonnull Inventory merchantInventory) {
+    public Location getLocation(@Nonnull Inventory inventory) {
         try {
-            EntityVillager entity = (EntityVillager) merchantField.get(((CraftInventoryMerchant) merchantInventory).getInventory());
+            EntityVillager entity = (EntityVillager) merchantField.get(((CraftInventoryMerchant) inventory).getInventory());
             return new Location(entity.world.getWorld(), entity.locX, entity.locY, entity.locZ, entity.yaw, entity.pitch);
         } catch (IllegalArgumentException | IllegalAccessException e) {
             e.printStackTrace();
