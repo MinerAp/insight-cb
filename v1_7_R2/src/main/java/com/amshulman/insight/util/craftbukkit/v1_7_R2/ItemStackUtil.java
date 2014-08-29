@@ -5,7 +5,7 @@ import net.minecraft.server.v1_7_R2.NBTTagCompound;
 import org.bukkit.craftbukkit.v1_7_R2.inventory.CraftItemStack;
 import org.bukkit.inventory.ItemStack;
 
-public final class NMSItemStack extends com.amshulman.insight.util.craftbukkit.NMSItemStack {
+public final class ItemStackUtil extends com.amshulman.insight.util.craftbukkit.ItemStackUtil {
 
     @Override
     public String getTag(ItemStack itemStack) {

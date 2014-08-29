@@ -10,11 +10,12 @@ import net.minecraft.util.com.google.gson.JsonParseException;
 import net.minecraft.util.org.apache.commons.lang3.exception.ExceptionUtils;
 
 import org.bukkit.craftbukkit.v1_7_R2.entity.CraftPlayer;
+import org.bukkit.entity.Player;
 
-public final class Player extends com.amshulman.insight.util.craftbukkit.Player {
+public final class PlayerUtil extends com.amshulman.insight.util.craftbukkit.PlayerUtil {
 
     @Override
-    public void sendRawMessage(@Nonnull org.bukkit.entity.Player player, @Nonnull String message) {
+    public void sendRawMessage(@Nonnull Player player, @Nonnull String message) {
         EntityPlayer localEntityPlayer = ((CraftPlayer) player).getHandle();
 
         try {

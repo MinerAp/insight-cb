@@ -1,20 +1,21 @@
-package com.amshulman.insight.util.craftbukkit.v1_7_R4;
+package com.amshulman.insight.util.craftbukkit.v1_7_R3;
 
 import javax.annotation.Nonnull;
 
-import net.minecraft.server.v1_7_R4.ChatSerializer;
-import net.minecraft.server.v1_7_R4.EntityPlayer;
-import net.minecraft.server.v1_7_R4.ExceptionInvalidSyntax;
-import net.minecraft.server.v1_7_R4.IChatBaseComponent;
+import net.minecraft.server.v1_7_R3.ChatSerializer;
+import net.minecraft.server.v1_7_R3.EntityPlayer;
+import net.minecraft.server.v1_7_R3.ExceptionInvalidSyntax;
+import net.minecraft.server.v1_7_R3.IChatBaseComponent;
 import net.minecraft.util.com.google.gson.JsonParseException;
 import net.minecraft.util.org.apache.commons.lang3.exception.ExceptionUtils;
 
-import org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R3.entity.CraftPlayer;
+import org.bukkit.entity.Player;
 
-public final class Player extends com.amshulman.insight.util.craftbukkit.Player {
+public final class PlayerUtil extends com.amshulman.insight.util.craftbukkit.PlayerUtil {
 
     @Override
-    public void sendRawMessage(@Nonnull org.bukkit.entity.Player player, @Nonnull String message) {
+    public void sendRawMessage(@Nonnull Player player, @Nonnull String message) {
         EntityPlayer localEntityPlayer = ((CraftPlayer) player).getHandle();
 
         try {
