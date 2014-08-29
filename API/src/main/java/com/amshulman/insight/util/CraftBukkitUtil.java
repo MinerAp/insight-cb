@@ -9,9 +9,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.amshulman.insight.util.craftbukkit.Anvil;
 import com.amshulman.insight.util.craftbukkit.Block;
+import com.amshulman.insight.util.craftbukkit.EnchantingTable;
+import com.amshulman.insight.util.craftbukkit.EnderChest;
 import com.amshulman.insight.util.craftbukkit.Merchant;
 import com.amshulman.insight.util.craftbukkit.NMSItemStack;
 import com.amshulman.insight.util.craftbukkit.Player;
+import com.amshulman.insight.util.craftbukkit.Workbench;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public final class CraftBukkitUtil {
@@ -24,9 +27,12 @@ public final class CraftBukkitUtil {
 
         initialize(Anvil.class, version);
         initialize(Block.class, version);
+        initialize(EnchantingTable.class, version);
+        initialize(EnderChest.class, version);
         initialize(NMSItemStack.class, version);
         initialize(Merchant.class, version);
         initialize(Player.class, version);
+        initialize(Workbench.class, version);
     }
 
     @SuppressWarnings("unchecked")

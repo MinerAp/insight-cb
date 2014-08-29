@@ -9,7 +9,7 @@ public abstract class Anvil {
 
     private static Anvil INSTANCE;
 
-    public static final Anvil getInstance() {
+    static final Anvil getInstance() {
         return INSTANCE;
     }
 

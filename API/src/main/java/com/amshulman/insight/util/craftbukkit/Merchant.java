@@ -9,7 +9,7 @@ public abstract class Merchant {
 
     private static Merchant INSTANCE;
 
-    public static final Merchant getInstance() {
+    static final Merchant getInstance() {
         return INSTANCE;
     }
 
