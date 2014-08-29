@@ -12,5 +12,5 @@ public abstract class PlayerUtil {
         return INSTANCE;
     }
 
-    public abstract void sendRawMessage(@Nonnull Player player, @Nonnull String message);
+    public abstract void sendRawMessages(@Nonnull Player player, @Nonnull String[] messages);
 }

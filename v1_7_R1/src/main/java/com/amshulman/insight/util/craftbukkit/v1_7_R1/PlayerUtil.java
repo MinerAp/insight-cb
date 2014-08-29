@@ -15,12 +15,14 @@ import org.bukkit.entity.Player;
 public final class PlayerUtil extends com.amshulman.insight.util.craftbukkit.PlayerUtil {
 
     @Override
-    public void sendRawMessage(@Nonnull Player player, @Nonnull String message) {
+    public void sendRawMessages(@Nonnull Player player, @Nonnull String[] messages) {
         EntityPlayer localEntityPlayer = ((CraftPlayer) player).getHandle();
 
         try {
-            IChatBaseComponent localIChatBaseComponent = ChatSerializer.a(message);
-            localEntityPlayer.sendMessage(localIChatBaseComponent);
+            for (String message : messages) {
+                IChatBaseComponent localIChatBaseComponent = ChatSerializer.a(message);
+                localEntityPlayer.sendMessage(localIChatBaseComponent);
+            }
         } catch (JsonParseException localJsonParseException) {
             Throwable localThrowable = ExceptionUtils.getRootCause(localJsonParseException);
             throw new ExceptionInvalidSyntax("commands.tellraw.jsonException", new Object[] { localThrowable == null ? "" : localThrowable.getMessage() });
