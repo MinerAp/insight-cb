@@ -25,6 +25,10 @@ public final class EnderChest extends com.amshulman.insight.util.craftbukkit.End
     public Location getLocation(@Nonnull Inventory inventory) {
         try {
             TileEntity tileEntity = (TileEntityEnderChest) tileEntityField.get(((CraftInventory) inventory).getInventory());
+            if (tileEntity == null) {
+                return null;
+            }
+
             return new Location(tileEntity.getWorld().getWorld(), tileEntity.x, tileEntity.y, tileEntity.z);
         } catch (IllegalArgumentException | IllegalAccessException e) {
             e.printStackTrace();
