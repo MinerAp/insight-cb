@@ -3,6 +3,7 @@ package com.amshulman.insight.util.craftbukkit;
 import org.bukkit.Location;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.DoubleChest;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
@@ -14,8 +15,8 @@ public class InventoryUtil {
             case CHEST:
                 if (inventory.getHolder() instanceof DoubleChest) {
                     return null;
-                } else if (inventory.getHolder() instanceof Player) {
-                    return ((Player) inventory.getHolder()).getLocation();
+                } else if (inventory.getHolder() instanceof Entity) {
+                    return ((Entity) inventory.getHolder()).getLocation();
                 } else {
                     return ((BlockState) inventory.getHolder()).getLocation();
                 }
