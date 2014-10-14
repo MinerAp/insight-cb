@@ -47,7 +47,11 @@ public class InventoryUtil {
             case DROPPER:
             case FURNACE:
             case HOPPER:
-                return ((BlockState) inventory.getHolder()).getLocation();
+                if (inventory.getHolder() instanceof Entity) {
+                    return ((Entity) inventory.getHolder()).getLocation();
+                } else {
+                    return ((BlockState) inventory.getHolder()).getLocation();
+                }
         }
 
         return null;
