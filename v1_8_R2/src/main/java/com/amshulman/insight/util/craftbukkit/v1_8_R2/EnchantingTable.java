@@ -19,7 +19,7 @@ public final class EnchantingTable extends com.amshulman.insight.util.craftbukki
     private static Field enchantTablePositionField;
 
     public EnchantingTable() throws NoSuchFieldException, SecurityException, ClassNotFoundException {
-        containerEnchantTableField = Class.forName("net.minecraft.server.v1_8_R2.ContainerEnchantTable$1").getDeclaredField("this$0");
+        containerEnchantTableField = Class.forName(ContainerEnchantTable.class.getName() + "$1").getDeclaredField("this$0");
         enchantTableWorldField = ContainerEnchantTable.class.getDeclaredField("world");
         enchantTablePositionField = ContainerEnchantTable.class.getDeclaredField("position");
 

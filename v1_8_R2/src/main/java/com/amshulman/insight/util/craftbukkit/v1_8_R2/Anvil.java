@@ -19,7 +19,7 @@ public final class Anvil extends com.amshulman.insight.util.craftbukkit.Anvil {
     private static Field anvilPositionField;
 
     public Anvil() throws NoSuchFieldException, SecurityException, ClassNotFoundException {
-        containerAnvilField = Class.forName("net.minecraft.server.v1_8_R2.ContainerAnvil$1").getDeclaredField("this$0");
+        containerAnvilField = Class.forName(ContainerAnvil.class.getName() + "$1").getDeclaredField("this$0");
         anvilWorldField = ContainerAnvil.class.getDeclaredField("i");
         anvilPositionField = ContainerAnvil.class.getDeclaredField("j");
 
