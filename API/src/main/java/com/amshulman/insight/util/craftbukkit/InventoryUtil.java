@@ -21,17 +21,8 @@ public class InventoryUtil {
                     return ((BlockState) inventory.getHolder()).getLocation();
                 }
 
-            case ANVIL:
-                return Anvil.getInstance().getLocation(inventory);
-
-            case ENCHANTING:
-                return EnchantingTable.getInstance().getLocation(inventory);
-
             case ENDER_CHEST:
                 return EnderChest.getInstance().getLocation(inventory);
-
-            case MERCHANT:
-                return Merchant.getInstance().getLocation(inventory);
 
             case WORKBENCH:
                 return Workbench.getInstance().getLocation(inventory);
@@ -41,17 +32,16 @@ public class InventoryUtil {
             case PLAYER:
                 return ((Player) inventory.getHolder()).getLocation();
 
+            case ANVIL:
             case BEACON:
             case BREWING:
             case DISPENSER:
             case DROPPER:
+            case ENCHANTING:
             case FURNACE:
             case HOPPER:
-                if (inventory.getHolder() instanceof Entity) {
-                    return ((Entity) inventory.getHolder()).getLocation();
-                } else {
-                    return ((BlockState) inventory.getHolder()).getLocation();
-                }
+            case MERCHANT:
+                return inventory.getLocation();
         }
 
         return null;
