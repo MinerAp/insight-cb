@@ -12,5 +12,5 @@ public abstract class ItemStackUtil {
         return INSTANCE;
     }
 
-    public abstract String getTag(@Nonnull ItemStack itemStack);
+    public abstract String serializeItemAsJson(@Nonnull ItemStack itemStack);
 }
