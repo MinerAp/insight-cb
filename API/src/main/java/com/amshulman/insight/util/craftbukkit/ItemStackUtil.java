@@ -4,6 +4,8 @@ import javax.annotation.Nonnull;
 
 import org.bukkit.inventory.ItemStack;
 
+import com.google.gson.JsonElement;
+
 public abstract class ItemStackUtil {
 
     private static ItemStackUtil INSTANCE;
@@ -12,5 +14,5 @@ public abstract class ItemStackUtil {
         return INSTANCE;
     }
 
-    public abstract String serializeItemAsJson(@Nonnull ItemStack itemStack);
+    public abstract JsonElement serializeItemAsJson(@Nonnull ItemStack itemStack);
 }
