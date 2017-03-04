@@ -1,18 +1,18 @@
-package com.amshulman.insight.util.craftbukkit.v1_10_R1;
+package com.amshulman.insight.util.craftbukkit.v1_11_R1;
 
 import javax.annotation.Nonnull;
 
-import lombok.SneakyThrows;
-import net.minecraft.server.v1_10_R1.EntityPlayer;
-import net.minecraft.server.v1_10_R1.ExceptionInvalidSyntax;
-import net.minecraft.server.v1_10_R1.IChatBaseComponent;
-import net.minecraft.server.v1_10_R1.IChatBaseComponent.ChatSerializer;
-
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.bukkit.craftbukkit.v1_10_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_11_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import com.google.gson.JsonParseException;
+
+import lombok.SneakyThrows;
+import net.minecraft.server.v1_11_R1.EntityPlayer;
+import net.minecraft.server.v1_11_R1.ExceptionInvalidSyntax;
+import net.minecraft.server.v1_11_R1.IChatBaseComponent;
+import net.minecraft.server.v1_11_R1.IChatBaseComponent.ChatSerializer;
 
 public final class PlayerUtil extends com.amshulman.insight.util.craftbukkit.PlayerUtil {
 

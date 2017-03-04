@@ -1,15 +1,15 @@
-package com.amshulman.insight.util.craftbukkit.v1_10_R1;
+package com.amshulman.insight.util.craftbukkit.v1_11_R1;
 
 import javax.annotation.Nonnull;
 
-import net.minecraft.server.v1_10_R1.ItemStack;
-import net.minecraft.server.v1_10_R1.NBTTagCompound;
-
-import org.bukkit.craftbukkit.v1_10_R1.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_11_R1.inventory.CraftItemStack;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonNull;
 import com.google.gson.JsonPrimitive;
+
+import net.minecraft.server.v1_11_R1.ItemStack;
+import net.minecraft.server.v1_11_R1.NBTTagCompound;
 
 public final class ItemStackUtil extends com.amshulman.insight.util.craftbukkit.ItemStackUtil {
 

@@ -10,8 +10,8 @@
 	</parent>
 
 	<groupId>com.amshulman</groupId>
-	<artifactId>insight-cb-v1_10_R1</artifactId>
-	<name>Insight CraftBukkit v1_10_R1 Dependency</name>
+	<artifactId>insight-cb-v1_11_R1</artifactId>
+	<name>Insight CraftBukkit v1_11_R1 Dependency</name>
 
 	<dependencies>
 		<!-- Insight libraries -->
@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot</artifactId>
-			<version>1.10.2-R0.1-SNAPSHOT</version>
+			<version>1.11.2-R0.1-SNAPSHOT</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 	</dependencies>
 
@@ -32,7 +32,7 @@
 		<repository>
 			<id>minerap-repo</id>
 			<name>MinerAp</name>
-			<url>http://repo.minerap.com/content/groups/public/</url>
+			<url>https://repo.minerap.com/repository/public/</url>
 		</repository>
 	</repositories>
 </project>

@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import com.amshulman.insight.util.craftbukkit.BlockUtil;
-import com.amshulman.insight.util.craftbukkit.EnderChest;
 import com.amshulman.insight.util.craftbukkit.ItemStackUtil;
 import com.amshulman.insight.util.craftbukkit.PlayerUtil;
 import com.amshulman.insight.util.craftbukkit.Workbench;
@@ -23,7 +22,6 @@ public final class CraftBukkitUtil {
         plugin.getLogger().info("Detected NMS " + version);
 
         initialize(BlockUtil.class, version);
-        initialize(EnderChest.class, version);
         initialize(ItemStackUtil.class, version);
         initialize(PlayerUtil.class, version);
         initialize(Workbench.class, version);

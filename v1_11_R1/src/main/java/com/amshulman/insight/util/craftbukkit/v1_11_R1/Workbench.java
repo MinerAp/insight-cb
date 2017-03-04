@@ -1,17 +1,17 @@
-package com.amshulman.insight.util.craftbukkit.v1_10_R1;
+package com.amshulman.insight.util.craftbukkit.v1_11_R1;
 
 import java.lang.reflect.Field;
 
 import javax.annotation.Nonnull;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_10_R1.inventory.CraftInventoryCrafting;
+import org.bukkit.craftbukkit.v1_11_R1.inventory.CraftInventoryCrafting;
 import org.bukkit.inventory.Inventory;
 
-import net.minecraft.server.v1_10_R1.BlockPosition;
-import net.minecraft.server.v1_10_R1.ContainerWorkbench;
-import net.minecraft.server.v1_10_R1.InventoryCrafting;
-import net.minecraft.server.v1_10_R1.World;
+import net.minecraft.server.v1_11_R1.BlockPosition;
+import net.minecraft.server.v1_11_R1.ContainerWorkbench;
+import net.minecraft.server.v1_11_R1.InventoryCrafting;
+import net.minecraft.server.v1_11_R1.World;
 
 public final class Workbench extends com.amshulman.insight.util.craftbukkit.Workbench {
 

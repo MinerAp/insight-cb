@@ -21,9 +21,6 @@ public class InventoryUtil {
                     return ((BlockState) inventory.getHolder()).getLocation();
                 }
 
-            case ENDER_CHEST:
-                return EnderChest.getInstance().getLocation(inventory);
-
             case WORKBENCH:
                 return Workbench.getInstance().getLocation(inventory);
 
@@ -38,6 +35,7 @@ public class InventoryUtil {
             case DISPENSER:
             case DROPPER:
             case ENCHANTING:
+            case ENDER_CHEST:
             case FURNACE:
             case HOPPER:
             case MERCHANT:
